@@ -1,0 +1,328 @@
+
+<html>
+<head>
+<title>Eastern Birds</title>
+<link rel="stylesheet" href="../../css/main.css" type="text/css"/>
+</head>
+
+<style>
+
+
+body {
+    color: gray;
+    font-family: 'Univers', 'Helvetica', 'Arial', 'sans-serif';
+    }
+
+
+.button{
+    font-size:calc(1.8vw + 2.7vh);
+    border:none;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden; 
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+    }
+
+.display-left{
+    position:absolute;top:50%;left:0%;
+    transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%); 
+    margin-left:3vw}
+
+.display-right{
+    position:absolute;top:50%;right:0%;
+    transform:translate(0%,-50%);-ms-transform:translate(0%,-50%); 
+    margin-right:3vw}
+
+.button:hover{
+    color:gray !important
+    }
+
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 24pt;
+    font-weight: 900;
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+
+
+.menu-item-left {
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left:5vw;
+    margin-right:0px;
+    }
+
+
+.menu-item-right {
+    text-align: center;
+    display: block;
+    float: right;
+    margin-left:0px;
+    margin-right:5vw;
+    }
+
+
+.container {
+    width: 99vw;
+    margin: 0 auto;
+    }
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 100vw;
+    transform: translateY(calc(50vh - 50%));
+    }
+
+
+.gallery-item {
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+
+.gallery img {
+    margin-left:auto;
+    margin-right:auto;
+    height:67vh;
+    }
+
+.caption {
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+
+.mySlides {
+    display:none;
+    }
+
+
+@media screen and (max-width: 900px) {
+    .gallery {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        }
+    .gallery-item {
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .gallery-item img {
+        height: auto;
+        min-width: 600;
+        width: calc(75vw - 30px);
+        margin: 2px;
+        }
+    .menu-item-left {
+        margin-left:5px;
+        }
+    .menu-item-right {
+        margin-right:25px;
+        }
+    .caption {
+        font-size: 12pt;
+        margin-bottom: 40px;
+        }
+    .display-left{
+        margin-left:0vw;
+        }
+
+    .display-right{
+        margin-right:0vw;
+        }
+    }
+
+
+
+@media screen and (max-width: 650px) {
+    .gallery-item img {
+        height: auto;
+        width: calc(90vw - 30px);
+        min-width: calc(90vw - 30px);
+        margin: 2px;
+        }
+    }
+
+</style>
+
+
+<body>
+
+    <div class="menu-bar">
+      <div class="menu-item-right"><a href="index.html">&#10005;</a></div>
+    </div>
+
+<div class=container>
+<div class="gallery">
+
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/01_Marsh Wren.jpg">
+        </a>
+        <p class="caption">Marsh Wren</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/02_Great Blue Heron.jpg">
+        </a>
+        <p class="caption">Great Blue Heron</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/03_Cedar Waxwing.jpg">
+        </a>
+        <p class="caption">Cedar Waxwing</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/04_Canvasback.jpg">
+        </a>
+        <p class="caption">Canvasback</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/05_Savannah Sparrow.jpg">
+        </a>
+        <p class="caption">Savannah Sparrow</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/06_Little Blue Heron.jpg">
+        </a>
+        <p class="caption">Little Blue Heron</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/07_Common Loon.jpg">
+        </a>
+        <p class="caption">Common Loon</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/08_Bald Eagle.jpg">
+        </a>
+        <p class="caption">Bald Eagle</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/09_Piping Plover.jpg">
+        </a>
+        <p class="caption">Piping Plover</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/10_Surf Scoter.jpg">
+        </a>
+        <p class="caption">Surf Scoter</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/11_Bufflehead.jpg">
+        </a>
+        <p class="caption">Bufflehead</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/12_Least Tern.jpg">
+        </a>
+        <p class="caption">Least Tern</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/13_Wild Turkey.jpg">
+        </a>
+        <p class="caption">Wild Turkey</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/14_Horned Lark.jpg">
+        </a>
+        <p class="caption">Horned Lark</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/15_Pied-billed Grebe.jpg">
+        </a>
+        <p class="caption">Pied-billed Grebe</p>
+    </div>
+    
+    <div class="gallery-item mySlides">
+        <a href=index.html>
+        <img src="https://raw.githubusercontent.com/photogalleries/naturalist/photos/Eastern Birds/16_Belted Kingfisher.jpg">
+        </a>
+        <p class="caption">Belted Kingfisher</p>
+    </div>
+    
+
+
+  <button class="button display-left" onclick="plusDivs(-1)">&#9001;</button>
+  <button class="button display-right" onclick="plusDivs(1)">&#9002;</button>
+</div>
+</div>
+
+
+<script>
+
+function getSlideIndex(url) {
+    name = 'slide';
+    if (!url) url = window.location.href;
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)_|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return 1;
+    if (!results[2]) return 1;
+    return Number(decodeURIComponent(results[2].replace(/\+/g, ' ')));
+}
+
+var slideIndex = getSlideIndex();
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
